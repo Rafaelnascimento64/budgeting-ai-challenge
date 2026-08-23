@@ -46,7 +46,6 @@ class GetBalanceByCategoryUseCaseTest {
         assertEquals(new BigDecimal("3000"), salario.saldo());
     }
 
-    /** Fake simples em memória para não depender de banco/Spring no teste unitário. */
     private static class InMemoryFakeRepository implements TransactionRepository {
         private final List<Transaction> data;
 

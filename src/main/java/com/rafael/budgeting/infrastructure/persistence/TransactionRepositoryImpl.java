@@ -7,11 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Infrastructure adapter that implements the domain's repository port,
- * keeping JPA details out of the domain and application layers
- * (Repository Pattern / Clean Architecture).
- */
 @Repository
 public class TransactionRepositoryImpl implements TransactionRepository {
 

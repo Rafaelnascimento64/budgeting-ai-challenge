@@ -31,7 +31,6 @@ public class TransactionEntity {
     private LocalDate date;
 
     protected TransactionEntity() {
-        // JPA
     }
 
     public TransactionEntity(UUID id, String description, BigDecimal amount, TransactionType type,

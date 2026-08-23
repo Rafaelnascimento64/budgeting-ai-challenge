@@ -12,16 +12,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * MELHORIA IMPLEMENTADA NESTE DESAFIO:
- * Novo tipo de consulta financeira. Em vez de apenas listar transações ou
- * calcular um saldo único, esse use case agrupa todas as transações por
- * categoria e devolve receitas, despesas e saldo de cada uma.
- *
- * Isso permite ao usuário perguntar, por comando de voz, algo como:
- * "Qual o meu saldo por categoria?" ou "Como estão meus gastos com mercado?"
- * e a IA usa esta ferramenta (Tool Calling) para responder com dados reais.
- */
 @Component
 public class GetBalanceByCategoryUseCase {
 

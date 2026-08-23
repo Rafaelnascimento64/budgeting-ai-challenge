@@ -15,13 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.Map;
 
-/**
- * Endpoint principal do fluxo de voz:
- * 1. Recebe um arquivo de áudio;
- * 2. Transcreve para texto (speech-to-text);
- * 3. Envia o texto para o ChatClient, que decide qual ferramenta (@Tool) chamar;
- * 4. Retorna a resposta final gerada pela IA.
- */
 @RestController
 @RequestMapping("/api/assistant")
 public class VoiceAssistantController {
@@ -48,8 +41,6 @@ public class VoiceAssistantController {
         );
     }
 
-    // Endpoint auxiliar em texto puro, útil para testar o fluxo de IA
-    // sem precisar gravar áudio (ótimo para testes manuais rápidos).
     @PostMapping("/text-command")
     public Map<String, String> handleTextCommand(@RequestParam("message") String message) {
         String response = chatClient.prompt()

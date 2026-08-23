@@ -15,12 +15,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- * Tools exposed to the language model via Spring AI's Tool Calling.
- * Each @Tool method wraps an application use case, so the AI layer never
- * touches the domain or persistence directly — it only triggers real
- * use cases, exactly like the REST controllers do.
- */
 @Component
 public class FinanceTools {
 

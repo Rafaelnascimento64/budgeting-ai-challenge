@@ -7,11 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-/**
- * Use case shared by both the REST controller and the AI Tool Calling layer.
- * Includes validation before persisting a transaction (one of the suggested
- * improvements in the challenge).
- */
 @Component
 public class CreateTransactionUseCase {
 

@@ -45,8 +45,6 @@ public class TransactionController {
         return listTransactionsUseCase.execute(category, type);
     }
 
-    // Novo endpoint REST criado como parte da melhoria: expõe a mesma
-    // consulta de saldo por categoria usada pela ferramenta de IA.
     @GetMapping("/balance-by-category")
     public List<CategoryBalance> balanceByCategory() {
         return getBalanceByCategoryUseCase.execute();
